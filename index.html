@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>다시곰</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="//fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="topBanner"></div>
+        <div class="topLinks"></div>
+        <section class="fixedUI">
+            <header class="header">
+                <div class="logoSearchBar">
+                    <a href="/" class="logo">
+                        <img src="" alt="다시곰로고">
+                    </a>
+                    <div class="searchArea">
+                        <div class="searchBox">
+                            <input type="text" class="globalSearch" placeholder="상품 또는 지역을 검색" value="">
+                            <a href="" class="searchBtn">
+                                <img src="./img/ui/searchIcon.png" alt="검색 아이콘">
+                            </a>
+                        </div>
+                        <div class="keywordBox">
+                            <div class="keywordBoxWrapper">
+                                <div class="keywordTab">
+                                    <a href="" class="kTab active"></a>
+                                    <a href="" class="kTab"></a>
+                                </div>
+                                <div class="keywordArea"></div>
+                            </div>
+                            <div class="keywordBoxUtil">
+                                <a href="" class="closeBox"></a>
+                                <a href="" class="deleteHistory"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userMenu">
+                        <button class="gomTalk">
+                            <img src="./img/ui/messageIcon.png" alt="메시지함 아이콘">
+                            메시지
+                        </button>
+                        <a href="" class="userMenuBtn"><img src="./img/ui/myShopIcon.png" alt="내상점관리 아이콘">상점관리</a>
+                        <a href="" class="userMenuBtn"><img src="./img/ui/sellIcon.png" alt="판매글 작성 아이콘">판매하기</a>
+                    </div>
+                </div>
+                <nav class="foldingNav">
+                    <div class="burgerIcon">
+                        <img src="./img/ui/burgerIcon.png" alt="카테고리 아이콘">
+                    </div>
+                </nav>
+            </header>
+            <nav class="sideTool">
+                <div class="sideToolInner">
+                    <div class="sideUI">
+                        <div class="sideUITitle">찜한상품</div>
+                        <div class="likes">
+                            <a href="" class="likesLink"></a>
+                        </div>
+                    </div>
+                    <div class="sideUI">
+                        <div class="sideUITitle">최근본상품</div>
+                    </div>
+                    <div class="sideUI"><button class="totheTop">TOP</button></div>
+                </div>
+            </nav>
+        </section>
+        <section class="mainPage"></section>
+        <footer class="footer"></footer>
+    </div>
 </body>
+
 </html>
