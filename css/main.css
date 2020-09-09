@@ -1,8 +1,9 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0 none; font: inherit; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
 
-body { color: #32323c; letter-spacing: -0.5px; font-size: 14px; font-family: "Noto Sans KR", sans-serif; font-weight: 400; line-height: 1; color: #282828; }
+body { color: #32323c; letter-spacing: -0.5px; font-size: 14px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; line-height: 1; color: #282828; }
 
 button { background-color: transparent; border: none; padding: 0; }
 
@@ -54,7 +55,7 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 
 .fixedUI .header .userMenu .userMenuBtn img { width: 23px; margin-right: 5px; }
 
-.fixedUI .header .userMenu .userMenuBtn::after { content: ""; width: 1px; height: 10px; border-right: 1px solid #c8c8c8; position: absolute; top: 8px; right: -15px; }
+.fixedUI .header .userMenu .userMenuBtn::after { content: ''; width: 1px; height: 10px; border-right: 1px solid #c8c8c8; position: absolute; top: 8px; right: -15px; }
 
 .fixedUI .header .foldingNav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 70px; }
 
@@ -93,4 +94,74 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 .fixedUI .sideTool .sideToolInner .sideUI .recentViewedPager { margin-top: 8px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .mainPage .mainSlideContainer { position: relative; max-width: 64.375rem; margin: 0 auto; height: 300px; background: white; }
+
+.mainPage .recommendedItems .sectionHeadline { display: -webkit-box; display: -ms-flexbox; display: flex; width: 1024px; padding-top: 55px; margin: 0 auto 22px; font-size: 24px; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer { position: relative; width: 1024px; height: 363px; margin: 0 auto; overflow: hidden; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide { margin-right: -1rem; overflow: hidden; position: relative; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList { width: 3120px; position: relative; display: block; top: 0; left: 0; opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem { width: 260px; height: 100%; float: left; min-height: 1px; background: #555; display: block; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink { background: whitesmoke; width: 15.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemImage { position: relative; margin-top: 30px; width: 194px; height: 194px; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemImage img { display: block; border-radius: 50%; width: 194px; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo { padding: 1rem 30px 26px; width: 100%; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemName { width: 100%; font-size: 1rem; text-align: center; text-overflow: ellipsis; white-space: nowrap; position: relative; overflow: hidden; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemIcon { width: 100%; height: 35px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 13px; color: #2b59ef; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemDetail { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 1.5rem; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemDetail .itemPrice { font-size: 18px; font-weight: 600; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemDetail .itemPrice::after { content: "원"; font-size: 13px; margin-left: 3px; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemDetail .itemUpdated { font-size: 13px; color: #828282; }
+
+.mainPage .midBanner { width: 1024px; height: 160px; margin: 30px auto 50px; position: relative; background: white; }
+
+.mainPage .categoryHot { background: white; padding-bottom: 100px; }
+
+.mainPage .categoryHot .categoryHotInner { width: 1024px; margin: auto; }
+
+.mainPage .categoryHot .categoryHotInner .categoryHotHeadline { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 24px; padding: 50px 0 20px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer { margin-bottom: 32px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer .categoryHotTabs { width: 100%; height: 56px; overflow: hidden; position: relative; border-left: 1px solid #d7d7d7; }
+
+.mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer .categoryHotTabs .categoryList { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 0; height: 50px; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; background: white; }
+
+.mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer .categoryHotTabs .categoryList .categoryEach { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: -1px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer .categoryHotTabs .categoryList .categoryEach .categoryBtn { width: 112px; height: 50px; -ms-flex-negative: 0; flex-shrink: 0; text-align: center; padding: 0 10px; border: 1px solid #828282; color: #32323c; margin-left: -1px; white-space: nowrap; overflow-x: hidden; background: white; font-weight: 500; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem { width: 196px; margin-right: 11px; margin-bottom: 11px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink { border: 1px solid #d7d7d7; background: white; display: block; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemThumb { position: relative; width: 100%; height: 194px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemThumb img { vertical-align: bottom; width: 194px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo { padding: 15px 10px; height: 80px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemName { position: relative; font-size: 14px; padding-bottom: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemDetail { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 20px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemDetail .itemPrice { font-size: 16px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemDetail .itemPrice::after { content: "원"; font-size: 13px; margin-left: 3px; }
+
+.mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemDetail .itemUpdated { font-size: 12px; color: #828282; }
 /*# sourceMappingURL=main.css.map */

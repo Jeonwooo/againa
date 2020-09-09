@@ -2,87 +2,7 @@ $colorPrimary: #2b59ef;
 $colorText: #32323c;
 $colorLine: #d7d7d7;
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio,
 video {
   margin: 0;
   padding: 0;
@@ -90,33 +10,38 @@ video {
   font: inherit;
   box-sizing: border-box;
 }
-button, input, optgroup, select, textarea{
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 body {
   color: $colorText;
   letter-spacing: -0.5px;
   font-size: 14px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
   line-height: 1;
-  color: rgb(40,40,40);
+  color: rgb(40, 40, 40);
 }
 button {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-a{
-    color: rgb(40,40,40);
-    text-decoration: none;
-    background-color: transparent;
+a {
+  color: rgb(40, 40, 40);
+  text-decoration: none;
+  background-color: transparent;
 }
-::before, ::after{
-    box-sizing: border-box;
+::before,
+::after {
+  box-sizing: border-box;
 }
 .wrapper {
   min-width: 1236px;
@@ -251,14 +176,14 @@ a{
           width: 23px;
           margin-right: 5px;
         }
-        &::after{
-            content: "";
-            width: 1px;
-            height: 10px;
-            border-right: 1px solid rgb(200,200,200);
-            position: absolute;
-            top: 8px;
-            right: -15px;
+        &::after {
+          content: '';
+          width: 1px;
+          height: 10px;
+          border-right: 1px solid rgb(200, 200, 200);
+          position: absolute;
+          top: 8px;
+          right: -15px;
         }
       }
     }
@@ -277,100 +202,312 @@ a{
       }
     }
   }
-  .sideTool{
-      position: absolute;
-      top: 160px;
-      right: calc(50% - 617px);
-      z-index: 20;
-      .sideToolInner{
-          width: 90px;
-          .sideUI{
-              padding: 10px;
-              width: 100%;
-              border: 1px solid $colorLine;
-              background: white;
-              margin-bottom: 6px;
-              &:last-child{
-                margin-bottom: 0;
-                padding: 0;
-              }
-              .sideUITitle{
-                  font-size: 12px;
-                  font-weight: 600px;
-                  color: $colorText;
-                  text-align: center;
-                  margin-bottom: 8px;
-              }
-              .likes{
-                  display: flex;
-                  justify-content: center;
-                  .likesLink{
-                      display: flex;
-                      align-items: center;
-                      font-size: 12px;
-                      color: rgb(200,200,200);
-                      font-weight: 600;
-                  }
-              }
-              .totheTop{
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 40px;
-                  width: 100%;
-                  font-weight: 600;
-                  font-size: 13px;
-                  color: rgb(100,100,100);
-              }
-              .viewedCounterBox{
-                  display: flex;
-                  justify-content: center;
-                  margin-bottom: 10px;
-                  .viewedCounter{
-                      display: flex;
-                      justify-content: center;
-                      font-size: 12px;
-                      color: $colorPrimary;
-                      font-weight: 600;
-                      width: 38px;
-                      border-bottom: 2px dotted rgb(130,130,130);
-                      padding-bottom: 10px;
-                  }
-              }
-              .recentViewedList{
-                  width: 100px;
-                  .recentViewedItems{
-                      display: block;
-                      width: 100%;
-                      margin-bottom: 5px;
-                      border: 1px solid transparent;
-                      position: relative;
-                      font-size: 13px;
-
-                      &:last-child{
-                          margin-bottom: 0;
-                      }
-                      img{
-                          width:66px;
-                      }
-                  }
-              }
-              .recentViewedPager{
-                  margin-top: 8px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-              }
+  .sideTool {
+    position: absolute;
+    top: 160px;
+    right: calc(50% - 617px);
+    z-index: 20;
+    .sideToolInner {
+      width: 90px;
+      .sideUI {
+        padding: 10px;
+        width: 100%;
+        border: 1px solid $colorLine;
+        background: white;
+        margin-bottom: 6px;
+        &:last-child {
+          margin-bottom: 0;
+          padding: 0;
+        }
+        .sideUITitle {
+          font-size: 12px;
+          font-weight: 600px;
+          color: $colorText;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+        .likes {
+          display: flex;
+          justify-content: center;
+          .likesLink {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: rgb(200, 200, 200);
+            font-weight: 600;
           }
+        }
+        .totheTop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          width: 100%;
+          font-weight: 600;
+          font-size: 13px;
+          color: rgb(100, 100, 100);
+        }
+        .viewedCounterBox {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 10px;
+          .viewedCounter {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            color: $colorPrimary;
+            font-weight: 600;
+            width: 38px;
+            border-bottom: 2px dotted rgb(130, 130, 130);
+            padding-bottom: 10px;
+          }
+        }
+        .recentViewedList {
+          width: 100px;
+          .recentViewedItems {
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+            border: 1px solid transparent;
+            position: relative;
+            font-size: 13px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            img {
+              width: 66px;
+            }
+          }
+        }
+        .recentViewedPager {
+          margin-top: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
+    }
   }
 }
-.mainPage{
-    .mainSlideContainer{
-        position: relative;
-        max-width: 64.375rem;
-        margin: 0 auto;
-        height: 300px;
-        background: white;
+.mainPage {
+  .mainSlideContainer {
+    position: relative;
+    max-width: 64.375rem;
+    margin: 0 auto;
+    height: 300px;
+    background: white;
+  }
+  .recommendedItems {
+    .sectionHeadline {
+      display: flex;
+      width: 1024px;
+      padding-top: 55px;
+      margin: 0 auto 22px;
+      font-size: 24px;
     }
+    .recommendedItemSlideContainer {
+      position: relative;
+      width: 1024px;
+      height: 363px;
+      margin: 0 auto;
+      overflow: hidden;
+      .recommendedItemSlide {
+        margin-right: -1rem;
+        overflow: hidden;
+        position: relative;
+        .slideList {
+          width: 3120px;
+          position: relative;
+          display: block;
+          top: 0;
+          left: 0;
+          opacity: 1;
+          transform: translateX(0);
+          .slideItem {
+            width: 260px;
+            height: 100%;
+            float: left;
+            min-height: 1px;
+            background: #555;
+            display: block;
+            .slideItemLink {
+              background: rgb(245, 245, 245);
+              width: 15.25rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              .itemImage {
+                position: relative;
+                margin-top: 30px;
+                width: 194px;
+                height: 194px;
+                img {
+                  display: block;
+                  border-radius: 50%;
+                  width: 194px;
+                }
+              }
+              .itemInfo {
+                padding: 1rem 30px 26px;
+                width: 100%;
+                .itemName {
+                  width: 100%;
+                  font-size: 1rem;
+                  text-align: center;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  position: relative;
+                  overflow: hidden;
+                }
+                .itemIcon{
+                  width: 100%;
+                  height: 35px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 13px;
+                  color: $colorPrimary;
+                }
+                .itemDetail{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 1.5rem;
+                  .itemPrice{
+                    font-size: 18px;
+                    font-weight: 600;
+                    &::after{
+                      content: "원";
+                      font-size: 13px;
+                      margin-left: 3px;
+                    }
+                  }
+                  .itemUpdated{
+                    font-size: 13px;
+                    color: rgb(130, 130, 130);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .midBanner{
+    width: 1024px;
+    height: 160px;
+    margin: 30px auto 50px;
+    position: relative;
+    background: white;
+  }
+  .categoryHot{
+    background: white;
+    padding-bottom: 100px;
+    .categoryHotInner{
+      width: 1024px;
+      margin: auto;
+      .categoryHotHeadline{
+        display: flex;
+        font-size: 24px;
+        padding: 50px 0 20px;
+      }
+      .categoryHotTabsContainer{
+        margin-bottom: 32px;
+        .categoryHotTabs{
+          width: 100%;
+          height: 56px;
+          overflow: hidden;
+          position: relative;
+          border-left: 1px solid $colorLine;
+          .categoryList{
+            display: flex;
+            margin-left: 0;
+            height: 50px;
+            border-top: 1px solid $colorLine;
+            border-bottom: 1px solid $colorLine;
+            background: white;
+            .categoryEach{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: -1px;
+              .categoryBtn{
+                width: 112px;
+                height:50px;
+                flex-shrink: 0;
+                text-align: center;
+                padding: 0 10px;
+                border: 1px solid rgb(130,130,130);
+                color: $colorText;
+                margin-left: -1px;
+                white-space: nowrap;
+                overflow-x: hidden;
+                background: white;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      .categoryItemsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        .categoryItem{
+          width: 196px;
+          margin-right: 11px;
+          margin-bottom: 11px;
+          .categoryLink{
+            border: 1px solid $colorLine;
+            background: white;
+            display: block;
+            .categoryItemThumb{
+              position: relative;
+              width: 100%;
+              height: 194px;
+              img{
+                vertical-align: bottom;
+                width:194px;
+              }
+            }
+            .categoryItemInfo{
+              padding: 15px 10px;
+              height: 80px;
+              .categoryItemName{
+                position: relative;
+                font-size: 14px;
+                padding-bottom: 20px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+              .categoryItemDetail{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 20px;
+                .itemPrice{
+                  font-size: 16px;
+                  font-weight: 600;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow:hidden;
+                  &::after{
+                    content: "원";
+                    font-size: 13px;
+                    margin-left: 3px;
+                  }
+                }
+                .itemUpdated{
+                  font-size: 12px;
+                  color: rgb(130, 130, 130);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
