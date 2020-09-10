@@ -8,6 +8,14 @@ const tagClass = (tag, classname, init) => {
   return makeTag;
 };
 
+qs('.globalSearch').addEventListener('focus', () => {
+  qs('.keywordBox').style.display = 'block';
+});
+qs('.globalSearch').addEventListener('blur', () => {
+  qs('.keywordBox').style.display = 'none';
+});
+//qs('.burgerIcon')
+
 class CreateSlider {
   constructor(wrap, width) {
     this.wrapper = wrap;
