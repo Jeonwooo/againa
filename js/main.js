@@ -1,62 +1,39 @@
 const qsall = el => document.querySelectorAll(el);
 const qs = el => document.querySelector(el);
-
-// const slide =_=> {
-//     const mainSlide = qs('.mainSlide');
-//     const slideLength = mainSlide.children.length;
-//     const slideWidth = 1030;
-
-//         let counter = 1;
-//         setInterval(()=>{
-//             counter = (counter + 1) % slideLength;
-//             mainSlide.style.transform = 'translateX('+ (-slideWidth * counter) + 'px)';}
-//         ,3000);
-// }
-
-// window.addEventListener('load', slide());
-const prevBtn = qs('.mainSlidePrevBtn');
-const nextBtn = qs('.mainSlideNextBtn');
-
-
 class createSlider {
-    constructor(wrapper,width){
-        this.wrapper = wrapper;
+    constructor(wrap,width){
+        this.wrapper = wrap;
         this.width = width;
     }
     Slider(isAuto,duration){
+        let counter = 1;
         const wrapper = qs(this.wrapper);
         const length = wrapper.children.length;
-        if(isAuto){
-            let counter = 1;
-        setInterval(()=>{
-            counter = (counter + 1) % length;
-            wrapper.style.transform = 'translateX('+ (-this.width * counter) + 'px)';}
-        ,duration);
+        const prevBtn = qs('.mainSlidePrevBtn');
+        const nextBtn = qs('.mainSlideNextBtn');
+        const sliding = direction =>{
+            counter = (counter + direction) % length;
+            wrapper.style.transform = 'translateX('+ (-this.width * counter) + 'px)';
+            console.log(counter);
         }
+        
+        if(isAuto){
+        setInterval(sliding(1),duration);
+        }
+
+        nextBtn.addEventListener('click', ()=> {
+            if(counter == length - 1) return;
+            sliding(1);
+        });
+        
+        prevBtn.addEventListener('click', ()=> {
+            if(counter == 0) return;
+            sliding(-1);
+        });
+
         window.addEventListener('load', this.Slider);
     }
 }
 
 const mainSlide = new createSlider('.mainSlide',1030);
-mainSlide.Slider(true,1500);
-
-// nextBtn.addEventListener('click', ()=> {
-//     if(counter >= mainSlideImages.length -1) return;
-//     counter++;
-//     mainSlide.style.transform = 'translateX('+ (-size * counter) + 'px)';
-// });
-
-// prevBtn.addEventListener('click', ()=>{
-//     if(counter <= 0) return;
-//     counter--;
-//     mainSlide.style.transform = 'translateX('+ (-size * counter) + 'px)';
-// });
-
-// mainSlide.addEventListener('transitioned', ()=> {
-//     if(mainSlideImages[counter].id === 'lastClone')
-// });
-
-
-
-
-
+mainSlide.Slider(true,2500);
