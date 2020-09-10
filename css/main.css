@@ -13,7 +13,7 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 
 .wrapper { min-width: 1236px; }
 
-.fixedUI { position: -webkit-sticky; position: sticky; width: 100%; padding-top: 35px; background: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); top: 0; left: 0; z-index: 1; }
+.fixedUI { position: -webkit-sticky; position: sticky; width: 100%; padding-top: 35px; background: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); top: 0; left: 0; z-index: 10; }
 
 .fixedUI .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 1024px; }
 
@@ -99,9 +99,9 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 
 .mainPage .mainSlideContainer .mainSlide img { display: block; float: left; height: 100%; min-height: 1px; width: 1030px; }
 
-.mainPage .mainSlideContainer .mainSlidePrevBtn { font-size: 0; line-height: 0; padding: 0; position: absolute; width: 15px; height: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1; background-size: cover; left: calc(50% - 500px); background-image: url("../img/ui/prevBtn.png"); }
+.mainPage .mainSlideContainer .prevBtn { font-size: 0; line-height: 0; padding: 0; position: absolute; width: 15px; height: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1; background-size: cover; left: calc(50% - 500px); background-image: url("../img/ui/prevBtn.png"); }
 
-.mainPage .mainSlideContainer .mainSlideNextBtn { font-size: 0; line-height: 0; padding: 0; position: absolute; width: 15px; height: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1; background-size: cover; right: calc(50% - 500px); background-image: url("../img/ui/nextBtn.png"); }
+.mainPage .mainSlideContainer .nextBtn { font-size: 0; line-height: 0; padding: 0; position: absolute; width: 15px; height: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1; background-size: cover; right: calc(50% - 500px); background-image: url("../img/ui/nextBtn.png"); }
 
 .mainPage .recommendedItems .sectionHeadline { display: -webkit-box; display: -ms-flexbox; display: flex; width: 1024px; padding-top: 55px; margin: 0 auto 22px; font-size: 24px; }
 
@@ -109,9 +109,9 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 
 .mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide { margin-right: -1rem; overflow: hidden; position: relative; }
 
-.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList { width: 3120px; position: relative; display: block; top: 0; left: 0; opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); }
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList { width: 3120px; position: relative; display: block; top: 0; left: 0; opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); -webkit-transition: -webkit-transform .8s ease-in-out; transition: -webkit-transform .8s ease-in-out; transition: transform .8s ease-in-out; transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out; }
 
-.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem { width: 260px; height: 100%; float: left; min-height: 1px; background: #555; display: block; }
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem { width: 260px; height: 100%; float: left; min-height: 1px; display: block; }
 
 .mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink { background: whitesmoke; width: 15.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -132,6 +132,10 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 .mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemDetail .itemPrice::after { content: "원"; font-size: 13px; margin-left: 3px; }
 
 .mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .slideList .slideItem .slideItemLink .itemInfo .itemDetail .itemUpdated { font-size: 13px; color: #828282; }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .prevBtn { font-size: 0; line-height: 0; padding: 0; position: absolute; width: 15px; height: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1; background-size: cover; left: calc(50% - 510px); background-image: url("../img/ui/prevBtn.png"); }
+
+.mainPage .recommendedItems .recommendedItemSlideContainer .recommendedItemSlide .nextBtn { font-size: 0; line-height: 0; padding: 0; position: absolute; width: 15px; height: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1; background-size: cover; right: calc(50% - 490px); background-image: url("../img/ui/nextBtn.png"); }
 
 .mainPage .midBanner { width: 1024px; height: 160px; margin: 30px auto 50px; position: relative; background: white; }
 

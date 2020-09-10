@@ -58,7 +58,7 @@ a {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
 
   .header {
     display: flex;
@@ -320,7 +320,7 @@ a {
 
       }
     }
-    .mainSlidePrevBtn{
+    .prevBtn{
       font-size: 0;
       line-height: 0;
       padding: 0;
@@ -334,7 +334,7 @@ a {
       left: calc(50% - 500px);
       background-image: url("../img/ui/prevBtn.png");
     }
-    .mainSlideNextBtn{
+    .nextBtn{
       font-size: 0;
       line-height: 0;
       padding: 0;
@@ -375,12 +375,12 @@ a {
           left: 0;
           opacity: 1;
           transform: translateX(0);
+          transition: transform .8s ease-in-out;
           .slideItem {
             width: 260px;
             height: 100%;
             float: left;
             min-height: 1px;
-            background: #555;
             display: block;
             .slideItemLink {
               background: rgb(245, 245, 245);
@@ -443,6 +443,34 @@ a {
               }
             }
           }
+        }
+        .prevBtn{
+          font-size: 0;
+          line-height: 0;
+          padding: 0;
+          position: absolute;
+          width: 15px;
+          height: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          background-size: cover;
+          left: calc(50% - 510px);
+          background-image: url("../img/ui/prevBtn.png");
+        }
+        .nextBtn{
+          font-size: 0;
+          line-height: 0;
+          padding: 0;
+          position: absolute;
+          width: 15px;
+          height: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          background-size: cover;
+          right: calc(50% - 490px);
+          background-image: url("../img/ui/nextBtn.png");
         }
       }
     }
