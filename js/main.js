@@ -20,29 +20,33 @@ qs('.globalSearch').addEventListener('blur', () => {
 });
 
 class CreateSlider {
-  constructor(wrap, width) {
+  constructor(wrap, width, isAuto, isBtn, duration, length) {
     this.wrapper = wrap;
     this.width = width;
+    this.isAuto = isAuto;
+    this.isBtn = isBtn;
+    this.duration = duration;
+    this.length = length;
   }
 
-  Slider(isAuto, isBtn, duration) {
+  Slider() {
     let counter = 0;
+    const wrapp = qs(this.wrapper);
     const sliding = (direction) => {
-      counter = (counter + direction) % qs(this.wrapper).children.length;
-      qs(this.wrapper).style.transform = `translateX(${-this.width * counter}px)`;
+      counter = (counter + direction) % this.length;
+      wrapp.style.transform = `translateX(${-this.width * counter}px)`;
     };
 
-    if (isAuto) {
-      setInterval(sliding(1), duration);
+    if (this.isAuto) {
+      setInterval(sliding, this.duration, 1);
     }
-
-    if (isBtn) {
+    if (this.isBtn) {
       const prev = tagClass('button', 'prevBtn');
       const next = tagClass('button', 'nextBtn');
-      qs(this.wrapper).parentNode.appendChild(prev);
-      qs(this.wrapper).parentNode.appendChild(next);
+      wrapp.parentNode.appendChild(prev);
+      wrapp.parentNode.appendChild(next);
       next.addEventListener('click', () => {
-        if (counter === qs(this.wrapper).children.length - 1) return;
+        if (counter === this.length - 1) return;
         sliding(1);
       });
       prev.addEventListener('click', () => {
@@ -50,16 +54,15 @@ class CreateSlider {
         sliding(-1);
       });
     }
-
     window.addEventListener('load', this.Slider);
   }
 }
 
-const mainSlide = new CreateSlider('.mainSlide', 1030);
-mainSlide.Slider(true, true, 2500);
+const mainSlide = new CreateSlider('.mainSlide', 1030, true, true, 2500, 4);
+mainSlide.Slider();
 
-const recommendSlide = new CreateSlider('.recommendedItemSlide .slideList', 1040);
-recommendSlide.Slider(false, true, 2500);
+const recommendSlide = new CreateSlider('.recommendedItemSlide .slideList', 1040, false, true, 2500, 3);
+recommendSlide.Slider();
 
 const recommendedItemList = [
   {
