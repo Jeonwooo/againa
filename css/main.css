@@ -49,11 +49,11 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 
 .fixedUI .header .userMenu .gomTalk { margin-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
 
-.fixedUI .header .userMenu .gomTalk img { width: 23px; margin-right: 5px; }
+.fixedUI .header .userMenu .gomTalk img { width: 28px; margin-right: 5px; }
 
 .fixedUI .header .userMenu .userMenuBtn { margin-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
 
-.fixedUI .header .userMenu .userMenuBtn img { width: 23px; margin-right: 5px; }
+.fixedUI .header .userMenu .userMenuBtn img { width: 28px; margin-right: 5px; }
 
 .fixedUI .header .userMenu .userMenuBtn::after { content: ''; width: 1px; height: 10px; border-right: 1px solid #c8c8c8; position: absolute; top: 8px; right: -15px; }
 
@@ -155,6 +155,8 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 
 .mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer .categoryHotTabs .categoryList .categoryEach .categoryBtn { width: calc(1032px / 9); height: 50px; -ms-flex-negative: 0; flex-shrink: 0; text-align: center; padding: 0 10px; border: 1px solid gainsboro; color: #32323c; margin-left: -1px; white-space: nowrap; overflow-x: hidden; background: white; font-weight: 500; }
 
+.mainPage .categoryHot .categoryHotInner .categoryHotTabsContainer .categoryHotTabs .categoryList .categoryEach .btnActive { color: white; backgorund: #2b59ef; border: none; }
+
 .mainPage .categoryHot .categoryHotInner .categoryItemsContainer { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; }
 
 .mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem { width: 196px; margin-bottom: 11px; }
@@ -176,4 +178,30 @@ a { color: #282828; text-decoration: none; background-color: transparent; }
 .mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemDetail .itemPrice::after { content: "원"; font-size: 13px; margin-left: 3px; }
 
 .mainPage .categoryHot .categoryHotInner .categoryItemsContainer .categoryItem .categoryLink .categoryItemInfo .categoryItemDetail .itemUpdated { font-size: 12px; color: #828282; }
+
+.footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: white; }
+
+.footer .footerNav { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+
+.footer .footerNav .footerNavList { height: 64px; width: 1024px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .footerNav .footerNavList a { width: 12.5%; text-align: center; display: block; font-size: 13px; color: #4d4d4d; position: relative; }
+
+.footer .footerNav .footerNavList a::after { content: ""; position: absolute; top: 0; right: 0; width: 1px; height: 14px; border-right: 1px solid #c8c8c8; }
+
+.footer .footerNav .footerNavList a:last-child::after { border: none; }
+
+.footer .footerInfo { padding: 32px 0 24px; }
+
+.footer .footerInfo .companyInfo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 36px; }
+
+.footer .footerInfo .companyInfo .companyIntro .companyLink { margin-bottom: 4px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .footerInfo .companyInfo .companyIntro .companyLink img { height: 24px; }
+
+.footer .footerInfo .companyInfo .companyIntro .companySummary { line-height: 1.57; letter-spacing: -0.8px; }
+
+.footer .footerInfo .detailInfo { width: 1024px; font-size: 13px; color: #969696; }
+
+.footer .footerInfo .detailInfo .infoSection { line-height: 1.57; margin-bottom: 24px; }
 /*# sourceMappingURL=main.css.map */

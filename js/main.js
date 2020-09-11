@@ -10,11 +10,13 @@ const tagClass = (tag, classname, init) => {
   return makeTag;
 };
 
+
+const keywordBox = qs('.keywordBox');
 qs('.globalSearch').addEventListener('focus', () => {
-  qs('.keywordBox').style.display = 'block';
+  keywordBox.style.display = 'block';
 });
 qs('.globalSearch').addEventListener('blur', () => {
-  qs('.keywordBox').style.display = 'none';
+  keywordBox.style.display = 'none';
 });
 
 class CreateSlider {
@@ -195,11 +197,12 @@ let categoryTabNow = 0;
 categoryTabs.forEach((elem) => {
   const categoryBtn = tagClass('button', 'categoryBtn', elem);
   const categoryEach = tagClass('div', 'categoryEach');
-  categoryBtn.addEventListener('click', () => {
-    categoryBtn.classList.add();
-  });
   categoryEach.appendChild(categoryBtn);
   qs('.categoryHotTabs .categoryList').appendChild(categoryEach);
+  categoryBtn.addEventListener('click', () => {
+    // qsall('.categoryBtn').classList.remove('btnActive');
+    // categoryBtn.classList.add('btnActive');
+  });
 });
 
 categoryItemListWoman.forEach((elem) => {
