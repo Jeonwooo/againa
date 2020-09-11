@@ -483,7 +483,7 @@ a {
     background: url('../img/ui/midBanner.jpg');
   }
   .categoryHot{
-    background: white;
+    background: rgb(248,248,248);
     padding-bottom: 100px;
     .categoryHotInner{
       width: 1024px;
@@ -514,12 +514,12 @@ a {
               align-items: center;
               margin-top: -1px;
               .categoryBtn{
-                width: 112px;
+                width: calc(1032px / 9);
                 height:50px;
                 flex-shrink: 0;
                 text-align: center;
                 padding: 0 10px;
-                border: 1px solid rgb(130,130,130);
+                border: 1px solid rgb(220,220,220);
                 color: $colorText;
                 margin-left: -1px;
                 white-space: nowrap;
@@ -534,9 +534,10 @@ a {
       .categoryItemsContainer{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
         .categoryItem{
           width: 196px;
-          margin-right: 11px;
           margin-bottom: 11px;
           .categoryLink{
             border: 1px solid $colorLine;
@@ -545,7 +546,7 @@ a {
             .categoryItemThumb{
               position: relative;
               width: 100%;
-              height: 194px;
+              height: 195px;
               img{
                 vertical-align: bottom;
                 width:194px;

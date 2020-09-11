@@ -1,3 +1,5 @@
+//import { recommendedItemList } from '../db/itemlist';
+
 const qsall = (el) => document.querySelectorAll(el);
 const qs = (el) => document.querySelector(el);
 const money = (numb) => numb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -14,7 +16,6 @@ qs('.globalSearch').addEventListener('focus', () => {
 qs('.globalSearch').addEventListener('blur', () => {
   qs('.keywordBox').style.display = 'none';
 });
-//qs('.burgerIcon')
 
 class CreateSlider {
   constructor(wrap, width) {
@@ -24,8 +25,6 @@ class CreateSlider {
 
   Slider(isAuto, isBtn, duration) {
     let counter = 0;
-    // const prevBtn = qs('.mainSlidePrevBtn');
-    // const nextBtn = qs('.mainSlideNextBtn');
     const sliding = (direction) => {
       counter = (counter + direction) % qs(this.wrapper).children.length;
       qs(this.wrapper).style.transform = `translateX(${-this.width * counter}px)`;
@@ -124,4 +123,100 @@ recommendedItemList.forEach((elem) => {
   slideItemLink.appendChild(itemInfo);
   slideItem.appendChild(slideItemLink);
   qs('.recommendedItemSlide .slideList').appendChild(slideItem);
+});
+
+const categoryItemListWoman = [
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+];
+
+const categoryTabs = ['여성의류', '패션잡화', '남성의류', '디지털/가전', '도서/티켓/취미', '생활/문구/가구', '스타굿즈', '유아동/출산', '스포츠/레저'];
+
+let categoryTabNow = 0;
+
+categoryTabs.forEach((elem) => {
+  const categoryBtn = tagClass('button', 'categoryBtn', elem);
+  const categoryEach = tagClass('div', 'categoryEach');
+  categoryBtn.addEventListener('click', () => {
+    categoryBtn.classList.add();
+  });
+  categoryEach.appendChild(categoryBtn);
+  qs('.categoryHotTabs .categoryList').appendChild(categoryEach);
+});
+
+categoryItemListWoman.forEach((elem) => {
+  const itemPrice = tagClass('div', 'itemPrice', elem.itemPrice);
+  const itemUpdated = tagClass('div', 'itemUpdated', elem.itemUpdated);
+  const categoryItemDetail = tagClass('div', 'categoryItemDetail');
+  const categoryItemName = tagClass('div', 'categoryItemName', elem.itemName);
+  const categoryItemInfo = tagClass('div', 'categoryItemInfo');
+  const categoryItemThumb = tagClass('div', 'categoryItemThumb', `<img src="${elem.itemImage}" alt="상품 이미지" />`);
+  const categoryLink = tagClass('a', 'categoryLink');
+  const categoryItem = tagClass('div', 'categoryItem');
+  categoryItemDetail.appendChild(itemPrice);
+  categoryItemDetail.appendChild(itemUpdated);
+  categoryItemInfo.appendChild(categoryItemName);
+  categoryItemInfo.appendChild(categoryItemDetail);
+  categoryLink.appendChild(categoryItemThumb);
+  categoryLink.appendChild(categoryItemInfo);
+  categoryItem.appendChild(categoryLink);
+  qs('.categoryItemsContainer').appendChild(categoryItem);
 });
