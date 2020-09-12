@@ -1,3 +1,5 @@
+const categoryTabs = ['여성의류', '패션잡화', '남성의류', '디지털/가전', '도서/티켓/취미', '생활/문구/가구', '스타굿즈', '유아동/출산', '스포츠/레저'];
+
 const recommendedItemList = [
   {
     itemName: '카야잼 스위트',
@@ -43,4 +45,67 @@ const recommendedItemList = [
   },
 ];
 
-//export { recommendedItemList };
+const categoryItemListWoman = [
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+  {
+    itemImage: './db/item/img/3.jpg',
+    itemName: '하트 후드티',
+    itemPrice: 29200,
+    itemUpdated: '20시간 전',
+  },
+];
+
+export { categoryTabs, categoryItemListWoman, recommendedItemList };

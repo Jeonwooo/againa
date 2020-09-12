@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0 none; font: inherit; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
+
+body { color: #32323c; letter-spacing: -0.5px; font-size: 14px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; line-height: 1; color: #282828; }
+
+button { background-color: transparent; border: none; padding: 0; cursor: pointer; }
+
+a { color: #282828; text-decoration: none; background-color: transparent; }
+
+::before, ::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper { min-width: 1236px; }
+
+.fixedUI { position: -webkit-sticky; position: sticky; width: 100%; padding-top: 35px; background: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); top: 0; left: 0; z-index: 10; }
+
+.fixedUI .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 1024px; }
+
+.fixedUI .header .logoSearchBar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 1024px; height: 40px; }
+
+.fixedUI .header .logoSearchBar .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 100px; width: 136px; }
+
+.fixedUI .header .logoSearchBar .searchArea { width: 460px; height: 40px; border: 1px solid #d7d7d7; border-radius: 3px; position: relative; }
+
+.fixedUI .header .logoSearchBar .searchArea .searchBox { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0px 15px; }
+
+.fixedUI .header .logoSearchBar .searchArea .searchBox .globalSearch { color: #646464; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; padding: 0; border: 0 none; }
+
+.fixedUI .header .logoSearchBar .searchArea .searchBox .searchBtn { text-decoration: none; }
+
+.fixedUI .header .logoSearchBar .searchArea .searchBox .searchBtn img { vertical-align: bottom; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox { position: absolute; top: 48px; left: 0; width: 100%; border: 1px solid #d7d7d7; background: white; z-index: 10; display: none; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox .keywordBoxWrapper { padding: 0 15px; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox .keywordBoxWrapper .keywordTab { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox .keywordBoxWrapper .keywordTab .kTab { padding: 25px 0 10px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; border-bottom: 2px solid #d7d7d7; height: 50px; text-align: center; font-weight: 600; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox .keywordBoxWrapper .keywordTab .active { border-bottom: 2px solid #2b59ef; color: #2b59ef; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox .keywordBoxWrapper .keywordArea { height: 360px; overflow: hidden; }
+
+.fixedUI .header .logoSearchBar .searchArea .keywordBox .keywordBoxUtil { width: 100%; height: 40px; background: #fafafa; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; padding: 0 25px; }
+
+.fixedUI .header .userMenu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+.fixedUI .header .userMenu .gomTalk { margin-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
+
+.fixedUI .header .userMenu .gomTalk img { width: 28px; margin-right: 5px; }
+
+.fixedUI .header .userMenu .userMenuBtn { margin-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
+
+.fixedUI .header .userMenu .userMenuBtn img { width: 28px; margin-right: 5px; }
+
+.fixedUI .header .userMenu .userMenuBtn::after { content: ''; width: 1px; height: 10px; border-right: 1px solid #c8c8c8; position: absolute; top: 8px; right: -15px; }
+
+.fixedUI .header .foldingNav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 70px; }
+
+.fixedUI .header .foldingNav .burgerIcon { margin-right: 20px; position: relative; }
+
+.fixedUI .header .foldingNav .burgerIcon img { vertical-align: bottom; border-style: none; width: 20px; }
+
+.fixedUI .sideTool { position: absolute; top: 160px; right: calc(50% - 617px); z-index: 20; }
+
+.fixedUI .sideTool .sideToolInner { width: 90px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI { padding: 10px; width: 100%; border: 1px solid #d7d7d7; background: white; margin-bottom: 6px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI:last-child { margin-bottom: 0; padding: 0; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .sideUITitle { font-size: 12px; font-weight: 600px; color: #32323c; text-align: center; margin-bottom: 8px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .likes { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .likes .likesLink { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 12px; color: #c8c8c8; font-weight: 600; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .totheTop { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 40px; width: 100%; font-weight: 600; font-size: 13px; color: #646464; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .viewedCounterBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 10px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .viewedCounterBox .viewedCounter { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 12px; color: #2b59ef; font-weight: 600; width: 38px; border-bottom: 2px dotted #828282; padding-bottom: 10px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .recentViewedList { width: 100px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .recentViewedList .recentViewedItems { display: block; width: 100%; margin-bottom: 5px; border: 1px solid transparent; position: relative; font-size: 13px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .recentViewedList .recentViewedItems:last-child { margin-bottom: 0; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .recentViewedList .recentViewedItems img { width: 66px; }
+
+.fixedUI .sideTool .sideToolInner .sideUI .recentViewedPager { margin-top: 8px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: white; }
+
+.footer .footerNav { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+
+.footer .footerNav .footerNavList { height: 64px; width: 1024px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .footerNav .footerNavList a { width: 12.5%; text-align: center; display: block; font-size: 13px; color: #4d4d4d; position: relative; }
+
+.footer .footerNav .footerNavList a::after { content: ""; position: absolute; top: 0; right: 0; width: 1px; height: 14px; border-right: 1px solid #c8c8c8; }
+
+.footer .footerNav .footerNavList a:last-child::after { border: none; }
+
+.footer .footerInfo { padding: 32px 0 24px; }
+
+.footer .footerInfo .companyInfo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 36px; }
+
+.footer .footerInfo .companyInfo .companyIntro .companyLink { margin-bottom: 4px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .footerInfo .companyInfo .companyIntro .companyLink img { height: 24px; }
+
+.footer .footerInfo .companyInfo .companyIntro .companySummary { line-height: 1.57; letter-spacing: -0.8px; }
+
+.footer .footerInfo .detailInfo { width: 1024px; font-size: 13px; color: #969696; }
+
+.footer .footerInfo .detailInfo .infoSection { line-height: 1.57; margin-bottom: 24px; }
