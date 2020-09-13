@@ -108,4 +108,18 @@ const categoryItemListWoman = [
   },
 ];
 
-export { categoryTabs, categoryItemListWoman, recommendedItemList };
+const itemInfo = {
+  category: ['생활/잡화', '잡화', '기타'],
+  like: 8,
+  viewed: 120,
+  title: '가오나시 자동 저금통',
+  price: 13000,
+  sale: 10000,
+  condition: '중고',
+  transFee: '별도',
+  location: '경기도 성남시 수정구',
+  uploadTime: '18시간 전',
+  image: './item/4.jpg',
+}
+
+export { categoryTabs, categoryItemListWoman, recommendedItemList, itemInfo };

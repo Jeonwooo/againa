@@ -1,0 +1,118 @@
+
+@import "./_setting.scss";
+.products{
+    display: flex;
+    justify-content: center;
+    background: white;
+    .productsInner{
+        width: 1024px;
+        .locationNav{
+            padding: 15px 0;
+            height: 50px;
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
+                    margin-right: 10px;
+                    a{
+                        margin-right: 10px;
+                    }
+                    &::after{
+                        content: "＞";
+                        font-size: 10px;
+                    }
+                    &:last-child::after{
+                        content: "";
+                    }
+                }
+            }
+        }
+        .itemTopinfoWrap{
+            position: relative;
+            width: 1024px;
+            display: flex;
+            .itemThumbImg{
+                display: flex;
+                position: relative;
+                overflow:hidden;
+                flex-direction: column;
+                width: 512px;
+                height: 700px;
+                margin-right: 40px;
+                .viewer{
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    list-style: none;
+                    li{
+                        display: none;
+                        overflow: hidden;
+                        width: 512px;
+                        height: 512px;
+                        text-align: center;
+                        line-height: 512px;
+                        &.on{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .itemTopinfo{
+                display: flex;
+                flex-direction: column;
+                width: 472px;
+                .itemTopinfoHeadline{
+                    min-height: 220px;
+                    .itemNow{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 18px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #aaa;
+                        .uploadTime{
+                            font-size: 20px;
+                            color: #333;
+                            font-weight: 600;
+                            line-height: 20px;
+                        }
+                        .itempop{
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #777;
+                            .itemLike{
+                                &::before{
+                                    content: "♡"
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .itemCase{
+                        .itemTit{
+                            width: 400px;
+                            margin-bottom: 14px;
+                            font-size: 28px;
+                            font-weight: 400;
+                            color: #222;
+                            line-height: 36px;
+                            letter-spacing: -1px;
+                        }
+                        .itemPrice{
+                            font-size: 30px;
+                            line-height: 36px;
+                            height: 36px;
+                            color: #111;
+                            font-weight: 700;
+                            &::after{
+                                content:"원";
+                                font-size: 28px;
+                                line-height: 36px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

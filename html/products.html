@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>중고 직거래 커뮤니티 - 또</title>
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/product.css" />
     <link href="//fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" />
   </head>
   <body>
@@ -15,13 +16,13 @@
         <header class="header">
           <div class="logoSearchBar">
             <a href="/" class="logo">
-              <img src="./img/ui/mainlogo.png" alt="메인 로고" />
+              <img src="../img/ui/mainlogo.png" alt="메인 로고" />
             </a>
             <div class="searchArea">
               <div class="searchBox">
                 <input type="text" class="globalSearch" placeholder="상품 또는 지역을 검색" value="" />
                 <a href="" class="searchBtn">
-                  <img src="./img/ui/searchIcon.png" alt="검색 아이콘" />
+                  <img src="../img/ui/searchIcon.png" alt="검색 아이콘" />
                 </a>
               </div>
               <div class="keywordBox">
@@ -40,16 +41,16 @@
             </div>
             <div class="userMenu">
               <button class="gomTalk">
-                <img src="./img/ui/messageIcon.png" alt="메시지함 아이콘" />
+                <img src="../img/ui/messageIcon.png" alt="메시지함 아이콘" />
                 메시지
               </button>
-              <a href="" class="userMenuBtn"><img src="./img/ui/myShopIcon.png" alt="내상점관리 아이콘" />상점관리</a>
-              <a href="" class="userMenuBtn"><img src="./img/ui/sellIcon.png" alt="판매글 작성 아이콘" />판매하기</a>
+              <a href="" class="userMenuBtn"><img src="../img/ui/myShopIcon.png" alt="내상점관리 아이콘" />상점관리</a>
+              <a href="" class="userMenuBtn"><img src="../img/ui/sellIcon.png" alt="판매글 작성 아이콘" />판매하기</a>
             </div>
           </div>
           <nav class="foldingNav">
             <div class="burgerIcon">
-              <img src="./img/ui/burgerIcon.png" alt="카테고리 아이콘" />
+              <img src="../img/ui/burgerIcon.png" alt="카테고리 아이콘" />
             </div>
           </nav>
         </header>
@@ -68,7 +69,7 @@
               </div>
               <div class="recentViewedList">
                 <a href="" class="recentViewedItems">
-                  <img src="./db/item/img/1.jpg" alt="상품 이미지" />
+                  <img src="../db/item/img/1.jpg" alt="상품 이미지" />
                 </a>
               </div>
               <div class="recentViewedPager"></div>
@@ -77,8 +78,55 @@
           </div>
         </nav>
       </section>
-      <section class="itemPage">
-
+      <section class="products">
+        <div class="productsInner">
+          <div class="locationNav">
+            <ul>
+              <li>
+                <a href="">또마켓 홈</a>
+              </li>
+              <li>
+                <a href="">생활/문구/가구/식품</a>
+              </li>
+              <li>
+                <a href="">주방용품</a>
+              </li>
+              <li>
+                <a href="">주방수납용품</a>
+              </li>
+            </ul>
+          </div>
+          <div class="itemTopinfoWrap">
+            <div class="itemThumbImg">
+              <div class="imgViewer">
+                <ul class="viewer">
+                  <li class="on"><img src="../db/item/img/4.jpg" alt="상품 이미지"></li>
+                  <li><img src="../db/item/img/5.jpg" alt="상품 이미지"></li>
+                  <li><img src="../db/item/img/6.jpg" alt="상품 이미지"></li>
+                </ul>
+              </div>
+              <div class="imgNav"></div>
+            </div>
+            <div class="itemTopinfo">
+              <div class="itemTopinfoHeadline">
+                <p class="itemNow">
+                  <span class="uploadTime">8시간 전</span>
+                  <span class="itempop">
+                    <span class="itemLike">8</span>
+                    <span class="itemViewed">167</span>
+                  </span>
+                </p>
+                <div class="itemCase">
+                  <h1 class="itemTit">가오나시 자동 저금통</h1>
+                  <p class="itemPrice">12000</p>
+                </div>
+              </div>
+              <div class="itemAddinfo"></div>
+              <div class="Adbanner"></div>
+              <item class="btnArea"></item>
+            </div>
+          </div>
+        </div>
       </section>
       <footer class="footer">
         <nav class="footerNav">
@@ -97,7 +145,7 @@
           <article class="companyInfo">
             <div class="companyIntro">
               <div class="companyLink">
-                <img src="./img/ui/mainlogo.png" alt="회사 로고" />
+                <img src="../img/ui/mainlogo.png" alt="회사 로고" />
               </div>
               <div class="companySummary">누구나 쉽게 이용할 수 있는 편하고 안전한 직거래 서비스를 만들어가고 있습니다.</div>
             </div>
@@ -119,6 +167,6 @@
         </section>
       </footer>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js" type="module"></script>
   </body>
 </html>
