@@ -1,0 +1,33 @@
+.loginBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 400px; margin: 0 auto; padding-top: 100px; }
+
+.loginBox .title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 30px; }
+
+.loginBox .loginForm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.loginBox .loginForm input { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 40px; border: 1px solid #aaa; width: 100%; padding: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 3px; margin-bottom: 15px; }
+
+.loginBox .loginForm input:focus { -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+
+.loginBox .loginForm input[name="pwd"] { background: no-repeat 97% 50%/7% url("../img/ui/invisibleIcon.png"); }
+
+.loginBox .loginForm .loginTools { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 30px; }
+
+.loginBox .loginForm .loginTools .checkbox { height: 15px; width: 15px; border: 1px solid #bbb; border-radius: 3px; margin-right: 8px; }
+
+.loginBox .loginForm .loginTools .checked { background: #2b59ef; }
+
+.loginBox .loginForm .loginTools .saveID { display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 40px; font-size: 14px; cursor: pointer; }
+
+.loginBox .loginForm .loginTools .saveLogin { display: -webkit-box; display: -ms-flexbox; display: flex; cursor: pointer; }
+
+.loginBox .loginBtn { width: 100%; height: 60px; background: #2b59ef; color: white; font-size: 16px; }
+
+.loginBox .findArea { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; margin-top: 5px; color: #555; }
+
+.loginBox .findArea a { padding: 15px; }
+
+.loginBox .findArea a:first-child::after { content: "|"; font-size: 13px; margin-left: 30px; vertical-align: top; color: #555; }
+
+.loginBox .signUp { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; margin-top: 25px; font-size: 16px; }
+
+.loginBox .signUp a { color: #2b59ef; cursor: pointer; }

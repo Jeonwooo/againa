@@ -1,0 +1,94 @@
+@import './_setting.scss';
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .loginForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    input {
+      display: flex;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #aaa;
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin-bottom: 15px;
+      &:focus{
+          box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      }
+      &[name="pwd"]{
+          background: no-repeat 97% 50%/7% url('../img/ui/invisibleIcon.png');
+      }
+    }
+    .loginTools{
+        display: flex;
+        margin-bottom: 30px;
+        .checkbox{
+            height: 15px;
+            width: 15px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+        .checked{
+            background: $colorPrimary;
+        }
+        .saveID{
+            display: flex;
+            margin-right: 40px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .saveLogin{
+            display: flex;
+            cursor: pointer;
+        }
+    }
+  }
+  .loginBtn{
+      width: 100%;
+      height: 60px;
+      background: $colorPrimary;
+      color: white;
+      font-size: 16px;
+  }
+  .findArea{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 5px;
+      color: #555;
+      a{
+          padding: 15px;
+          &:first-child::after{
+              content: "|";
+              font-size: 13px;
+              margin-left: 30px;
+              vertical-align: top;
+              color: #555;
+          }
+      }
+  }
+  .signUp{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 25px;
+      font-size: 16px;
+      a{
+          color: $colorPrimary;
+          cursor: pointer;
+      }
+  }
+}

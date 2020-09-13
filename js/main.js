@@ -44,6 +44,7 @@ recommendedItemList.forEach((elem) => {
   slideItemLink.appendChild(itemImage);
   slideItemLink.appendChild(itemInfo);
   slideItem.appendChild(slideItemLink);
+  slideItemLink.setAttribute('href', './html/products.html');
   qs('.recommendedItemSlide .slideList').appendChild(slideItem);
 });
 
